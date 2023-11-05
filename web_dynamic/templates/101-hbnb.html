@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css?{{ cache_id }}" />
+    <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css?{{ cache_id }}" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/scripts/101-hbnb.js?{{ cache_id }}"></script>
+  </head>
+  <body>
+    <header>
+      <div id="api_status" class="available"></div>
+      <!-- Rest of your header content... -->
+    </header>
+    <div class="places">
+      <!-- Places will be added dynamically using JavaScript -->
+    </div>
+    <div class="locations">
+      <h4>Selected Locations:</h4>
+      <ul class="states">
+        <li>
+          <input type="checkbox" data-id="1" data-name="State1" class="state-checkbox"> State1
+        </li>
+        <!-- Add more states with checkboxes here -->
+      </ul>
+      <ul class="cities">
+        <li>
+          <input type="checkbox" data-id="1" data-name="City1" class="city-checkbox"> City1
+        </li>
+        <!-- Add more cities with checkboxes here -->
+      </ul>
+    </div>
+    <div class="reviews">
+      <h2>Reviews <span id="toggle-reviews">show</span></h2>
+      <!-- Your list of reviews here -->
+    </div>
+    <button id="filter-button">Apply Filter</button>
+    <!-- Your HTML content... -->
+  </body>
+</html>
+
